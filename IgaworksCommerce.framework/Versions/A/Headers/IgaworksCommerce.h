@@ -23,14 +23,11 @@ typedef NS_ENUM(NSInteger, IgaworksCommerceCurrencyType)
 
 @interface IgaworksCommerce : NSObject
 
-/*!
- @abstract
- singleton IgaworksCommerce 객체를 반환한다.
- */
-+ (instancetype)shared;
++ (void)purchase:(NSString*)orderId productId:(NSString*)productId price:(double)price currencyString:(NSString *)currencyString category:(NSArray*)categories quantity:(NSUInteger)quantity productName:(NSString*)productName;
 
-- (void)purchase:(NSString *)productId price:(double)price currencyString:(NSString *)currencyString category:(NSArray*)categories quantity:(NSUInteger)quantity productName:(NSString*)productName;
++ (void)purchase:(NSString*)purchaseDataJsonString;
 
-- (NSString *)currencyName:(NSUInteger)currency;
+
++ (NSString *)currencyName:(NSUInteger)currency;
 
 @end

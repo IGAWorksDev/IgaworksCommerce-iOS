@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "IgaworksCommerceItem.h"
 
 typedef NS_ENUM(NSInteger, IgaworksCommerceCurrencyType)
 {
@@ -25,9 +26,12 @@ typedef NS_ENUM(NSInteger, IgaworksCommerceCurrencyType)
 
 + (void)purchase:(NSString*)orderId productId:(NSString*)productId price:(double)price currencyString:(NSString *)currencyString category:(NSArray*)categories quantity:(NSUInteger)quantity productName:(NSString*)productName;
 
++ (void)purchaseList:(NSArray*)orderInfo;
+
 + (void)purchase:(NSString*)purchaseDataJsonString;
 
-
 + (NSString *)currencyName:(NSUInteger)currency;
+
++ (IgaworksCommerceItem*)createItemModel :(NSString*)orderId productId:(NSString*)productId productName:(NSString*)productName price:(double)price quantity:(NSUInteger)quantity currencyString:(NSString *)currencyString category:(NSString*)categories;
 
 @end

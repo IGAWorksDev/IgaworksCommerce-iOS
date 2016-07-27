@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, IgaworksCommerceCurrencyType)
 
 @interface IgaworksCommerce : NSObject
 
-+ (void)purchase:(NSString*)orderId productId:(NSString*)productId productName:(NSString*)productName price:(double)price quantity:(NSUInteger)quantity currencyString:(NSString *)currencyString category:(NSString*)categories;
++ (void)purchase:(NSString*)orderId productId:(NSString*)productId price:(double)price currencyString:(NSString *)currencyString category:(NSArray*)categories quantity:(NSUInteger)quantity productName:(NSString*)productName;
 
 + (void)purchaseList:(NSArray*)orderInfo;
 

@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, IgaworksCommerceCurrencyType)
     IgaworksCommerceCurrencyJPY = 3,
     IgaworksCommerceCurrencyEUR = 4,
     IgaworksCommerceCurrencyGBP = 5,
-    IgaworksCommerceCurrencyCHY = 6,
+    IgaworksCommerceCurrencyCNY = 6,
     IgaworksCommerceCurrencyTWD = 7,
     IgaworksCommerceCurrencyHKD = 8
 };
